@@ -1,0 +1,11 @@
+{
+  "name": "tools",
+  "version": "0.1.0",
+  "description": "Skills for Davi's CLI tools: what each tool is, why, how to use it, and how an agent runs it. First tool: zen-review.",
+  "author": {
+    "name": "Davi Guides",
+    "url": "https://github.com/daviguides"
+  },
+  "repository": "https://github.com/daviguides/tools",
+  "license": "MIT"
+}
