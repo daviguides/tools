@@ -38,11 +38,7 @@ Before running, the agent MUST:
 
 ## Exit Codes
 
-| Lens | Exit | Meaning for an agent run |
-|---|---|---|
-| Standard | 1 after `Post this review to GitHub?` with stdin EOF | Expected, when a new YAML exists |
-| AI | 0 with "Not an interactive terminal: nothing was posted" | Expected |
-| Any | 2 | INCOMPLETE: MUST be reported as INCOMPLETE with the YAML `failures`. NEVER presented as a review |
+Exit codes are listed in the guide. An agent run treats the standard lens exit 1 after the post prompt (with a new YAML) and the AI lens exit 0 "nothing was posted" as success. Exit 2 is INCOMPLETE: MUST be reported as INCOMPLETE with the YAML `failures`, NEVER presented as a review.
 
 ## Analysis
 

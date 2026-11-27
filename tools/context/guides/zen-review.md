@@ -64,8 +64,8 @@ One command reviews a PR, branch, local change or whole project against Davi's s
 | Command | Purpose |
 |---|---|
 | `collect [target] [-r] [-b] [-o json\|text] [-e]` | Context only, no LLM |
-| `post pr:N [-r] [-f file.yaml]` | Post latest stored review (no reviewers, no LLM). Confirm, default No |
-| `re-review pr:N [-r] [-f]` | After author replied: classify each issue fixed / justified / no-response, resolve threads, reply, optionally approve. Two confirms, default No |
+| `post pr:N [-r] [-f file.yaml]` | Post latest stored review (no reviewers, no LLM). Confirm, default No. Human only; agent runs never use it (spec: Posting) |
+| `re-review pr:N [-r] [-f]` | After author replied: classify each issue fixed / justified / no-response, resolve threads, reply, optionally approve. Two confirms, default No. Human only; agent runs never use it (spec: Posting) |
 | `ai review {pr:N\|branch:X} [-r] [-b] [--profile] ...` | AI lens (see below) |
 | `security predetect [pr:N\|branch:X] [-r] [-b] [-f yaml\|text]` | Deterministic security checks, no LLM |
 | `security scan {pr:N\|branch:X} [-r] [-b] [--json]` | Scanners + lockfile analysis + dependency cards |
@@ -164,12 +164,6 @@ zen-review review pr:123 -r owner/repo --profile production < /dev/null
 
 # AI lens, PR base passed explicitly
 zen-review ai review pr:123 -r owner/repo -b staging --profile production < /dev/null
-
-# Post after reading the YAML (human, in the terminal)
-zen-review post pr:123 -r owner/repo
-
-# After the author replied
-zen-review re-review pr:123 -r owner/repo
 
 # Pre-PR / local
 zen-review review branch:feature/foo -b main

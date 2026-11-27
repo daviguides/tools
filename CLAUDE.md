@@ -53,7 +53,7 @@ tools/
 
 ---
 
-## Releasing — mandatory workflow
+## Releasing: mandatory workflow
 
 Every plugin modification MUST follow this sequence. No exceptions.
 
@@ -64,7 +64,7 @@ Patch for fixes/tweaks, minor for new skills or tools: `.claude-plugin/plugin.js
 ### 2. Commit and push
 
 ```bash
-git add -A && git commit -m "bump: vX.Y.Z — <what changed>"
+git add -A && git commit -m "bump: vX.Y.Z - <what changed>"
 git tag -a vX.Y.Z -m "<what changed>"
 git push && git push origin vX.Y.Z
 ```

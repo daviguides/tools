@@ -107,7 +107,7 @@ print_header() {
   box_top
   box_empty
   printf "${CYAN}│${NC}   ${BOLD}T O O L S${NC}   CLI tool skills                       ${CYAN}│${NC}\n"
-  printf "${CYAN}│${NC}                for Claude Code (v0.2.0)             ${CYAN}│${NC}\n"
+  printf "${CYAN}│${NC}                for Claude Code (v0.2.1)             ${CYAN}│${NC}\n"
   box_empty
   box_separator
 }
@@ -285,7 +285,7 @@ print_next_steps() {
   box_empty
   box_heading "Next Steps"
   box_text "/tools:zen-review usage   How zen-review works"
-  box_text "/tools:zen-review run     Review + AI lens, analyze"
+  box_text "/tools:zen-review run     Review + AI lens"
   box_empty
 }
 
