@@ -9,7 +9,7 @@ Claude Code skills for Davi's CLI tools. Each tool gets one skill:
 
 | Skill | Tool |
 |---|---|
-| `/tools:zen-review` | zen-review: multi-reviewer code review against zazen + shodo standards |
+| `/tools:zen-review` | zen-review: multi-reviewer code review against zazen + shodo standards, plus the AI lens on PR and branch targets. Results are analyzed in session; the agent posts only after approval |
 
 ## Install
 

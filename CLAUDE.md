@@ -41,7 +41,7 @@ tools/
 | Skill | Triggers | Purpose |
 |---|---|---|
 | `/tools:zen-review usage` | "zen-review", "como roda/usa o zen-review" | Explain zen-review. Executes nothing |
-| `/tools:zen-review run [target] [flags]` | "rode o zen-review", "zen-review run" | Run a review, store YAML, never post |
+| `/tools:zen-review run [target] [flags]` | "rode o zen-review", "zen-review run", "lens ai" | Run standard + AI lens, analyze, post via gh api after approval |
 
 ---
 
